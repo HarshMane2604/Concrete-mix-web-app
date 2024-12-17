@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital, wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: row;
+    /* width: 100%; */
+
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+}
+.dropdown-container {
+    position: relative;
+    display: inline-block;
+    width: 480px;
+    margin-left: 45px;
+    margin-bottom: 35px;
+  }
+
+.dropdown-input {
+    position: absolute;
+    width: 100%;
+    outline: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding: 0 30px;
+    line-height: 40px;
+    border-radius: 13px;
+    border: 2.4px solid #e2e0e0;
+    background: transparent;
+    transition: 0.1s ease;
+    z-index: 111;
+    
+  }
+::placeholder{
+    color: black;
+    font-weight: 300;
+  }
+  
+.dropdown-options {
+    display: none;
+    position: absolute;
+    width: 100%;
+    /* outline: none; */
+    font-size: 1em;
+    font-weight: 500;
+    color: #aaaaaa;
+    padding: 41px 30px 0px 30px;
+    line-height: 40px;
+    border-radius: 13px;
+    background-color: #fff;
+    border: 2.4px solid #e2e0e0;
+    max-height: auto;
+    overflow-y: auto;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 112;
+  }
+.dropdown-options div {
+    padding: 8px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+
+.dropdown-options div:hover {
+    background-color: #f8f8f8;
+  }
+.bg{
+    height: auto;
+    background-color: white;
+    border-radius: 25px 0px 0px 25px;
+    overflow-x: hidden;
+}
+.rhs{
+    height: auto;
+    background-color: white;
+    border-radius: 0px 25px 25px 0px;
+}
+h1{
+    margin-top: 15px;
+    margin-left: 25px;
+    margin-bottom: 15px;
+}
+
+.container{
+    width: 480px;
+    margin: 20px 45px;
+}
+.hello{
+    width: 480px;
+    margin: 20px 45px 80px 45px
+}
+.hello1{
+    width: 480px;
+    margin:75px 45px 20px 45px;
+}
+.entryarea{
+    position: relative;
+    height: 40px;
+    line-height: 40px;
+    z-index: 0;
+}
+input{
+    position: absolute;
+    width: 100%;
+    outline: none;
+    font-size: 1.2em;
+    font-weight: 500;
+    padding: 0 30px;
+    line-height: 40px;
+    border-radius: 13px;
+    border: 2.4px solid #e2e0e0;
+    background: transparent;
+    transition: 0.1s ease;
+    z-index: 1111;
+}
+.labelline{
+    position: absolute;
+    font-size: 1em;
+    color: rgb(0, 0, 0);
+    padding: 0 25px;
+    margin: 0 20px;
+    background-color: white;
+    transition: 0.2s ease;
+}
+input:focus,input:valid{
+    color: #ff6161;
+    border: 2.4px solid #fdaaaa;  
+}
+input:focus + .labelline,
+input:valid + .labelline {
+    color: #fdaaaa;
+    border: 2.4px 0px solid #fdaaaa;   
+    height: 30px;
+    line-height: 30px;
+    padding: 0 12px;
+    transform: translate(-15px, -16px)scale(0.88);
+    z-index: 1111;
+
+}

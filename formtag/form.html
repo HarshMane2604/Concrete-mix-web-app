@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Tag</title>
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+    <div class="bg">
+      <h1>Input</h1>
+      <div class="dropdown-container">
+        <input
+          type="text"
+          id="dropdown-input"
+          class="dropdown-input"
+          placeholder="Grade of Concrete"
+          readonly
+        />
+        <div id="dropdown-options" class="dropdown-options">
+          <div onclick="selectOption(this, 'M20')">M20</div>
+          <div onclick="selectOption(this, 'M25')">M25</div>
+          <div onclick="selectOption(this, 'M30')">M30</div>
+          <div onclick="selectOption(this, 'M35')">M35</div>
+          <div onclick="selectOption(this, 'M40')">M40</div>
+          <div onclick="selectOption(this, 'M45')">M45</div>
+          <div onclick="selectOption(this, 'M50')">M50</div>
+          <div onclick="selectOption(this, 'M55')">M55</div>
+          <div onclick="selectOption(this, 'M60')">M60</div>
+
+        </div>
+      </div>
+      <!-- <div class="dropdown-container">
+        <input
+          type="text"
+          id="dropdown-input"
+          class="dropdown-input"
+          placeholder="Grade of Concrete"
+          readonly
+        />
+        <div id="dropdown-options" class="dropdown-options">
+          <div onclick="selectOption(this, 'Option 1')">Option 1</div>
+          <div onclick="selectOption(this, 'Option 2')">Option 2</div>
+          <div onclick="selectOption(this, 'Option 3')">Option 3</div>
+          <div onclick="selectOption(this, 'Option 4')">Option 4</div>
+        </div>
+      </div> -->
+      <!-- <div class="container">
+        <div class="entryarea">
+          <input type="text" required />
+          <div class="labelline">Grade of cement</div>
+        </div>
+      </div> -->
+
+      <!-- <div class="dropdown-container">
+        <inputthis, 
+          type="text"
+          id="dropdown-input"
+          class="dropdown-input"
+          placeholder="Grade of Concrete"
+          readonly
+        />
+        <div id="dropdown-options" class="dropdown-options">
+          <div onclick="selectOption('Option 1')">Option 1</div>
+          <div onclick="selectOption('Option 2')">Option 2</div>
+          <div onclick="selectOption('Option 3')">Option 3</div>
+          <div onclick="selectOption('Option 4')">Option 4</div>
+        </div>
+      </div>-->
+      <div class="container">
+        <div class="entryarea">
+          <input type="text" required />
+          <div class="labelline">Grade of cement</div>
+        </div>
+      </div>
+       
+      <!-- <div class="dropdown-container">
+        <input
+          type="text"
+          id="dropdown-input"
+          class="dropdown-input"
+          placeholder="Grade of Concrete"
+          readonly
+        />
+        <div id="dropdown-options" class="dropdown-options">
+          <div onclick="selectOption('Option 1')">Option 1</div>
+          <div onclick="selectOption('Option 2')">Option 2</div>
+          <div onclick="selectOption('Option 3')">Option 3</div>
+          <div onclick="selectOption('Option 4')">Option 4</div>
+        </div>
+      </div> -->
+      <!-- <div class="container">
+        <div class="entryarea">
+          <input type="text" required />
+          <div class="labelline">Grade of cement</div>
+        </div>
+      </div> -->
+      <!-- <div class="container">
+        <div class="entryarea">
+          <input type="text" required />
+          <div class="labelline">SCm%</div>
+        </div>
+      </div> -->
+
+      <div class="container">
+        <div class="entryarea">
+          <input type="text" required />
+          <div class="labelline">Maximum size of aggregate</div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="entryarea">
+          <input type="text" required />
+          <div class="labelline">Type of aggregate</div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="entryarea">
+          <input type="text" required />
+          <div class="labelline">Exposure condition</div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="entryarea">
+          <input type="text" required />
+          <div class="labelline">Water cement ratio</div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="entryarea">
+          <input type="text" required />
+          <div class="labelline">Fine aggregate zone</div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="entryarea">
+          <input type="text" required />
+          <div class="labelline">Slum(mm)</div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="entryarea">
+          <input type="text" required />
+          <div class="labelline">Water content(based on trails)</div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="entryarea">
+          <input type="text" required/>
+          <div class="labelline">Volume of CP for plumbable</div>
+        </div>
+      </div>
+
+    </div>
+    <div class="rhs">
+      <div class="hello1">
+        <div class="entryarea">
+          <input type="text" required />
+          <div class="labelline">Admixture Dosage</div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="entryarea">
+          <input type="text" required />
+          <div class="labelline">Water reduction(%) due to admixture</div>
+        </div>
+      </div>
+      <h1>Specific Gravity</h1>
+      <div class="container">
+        <div class="entryarea">
+          <input type="text" required />
+          <div class="labelline">Cement</div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="entryarea">
+          <input type="text" required />
+          <div class="labelline">Fine aggregate</div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="entryarea">
+          <input type="text" required />
+          <div class="labelline">Coarse aggregate</div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="entryarea">
+          <input type="text" required />
+          <div class="labelline">SCm</div>
+        </div>
+      </div>
+      <h1>Water Absorbtion</h1>
+
+      <div class="container">
+        <div class="entryarea">
+          <input type="text" required />
+          <div class="labelline">Fine aggregate</div>
+        </div>
+      </div>
+
+      <div class="hello">
+        <div class="entryarea">
+          <input type="text" required />
+          <div class="labelline">Coarse aggregate</div>
+        </div>
+      </div>
+
+    </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
