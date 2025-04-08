@@ -8,181 +8,247 @@
     <link rel="stylesheet" href="output.css">
 </head>
 <body class="bg-cover bg-center bg-no-repeat  bg-slate-950 text-white text-xl flex justify-center items-center" style="background-image: url(./aesthetic-gradient-wallpapers-dark-black-soft-blur-wallpaper-for-iphone-14-15-16-pro-and-pro-max-29-11-2024-1732932377-hd-wallpaper.webp);"> 
-    <form action="">
-        <div class="bg-slate-900 m-24 p-10 w-fit rounded-xl custom-shadow flex flex-col justify-center items-center">
-       
-            <div class="grid grid-cols-2 gap-x-6 gap-y-4">
-                    <!-- Grade of Concrete -->
-                <label for="GradeofConcrete" class="text-right">Grade of Concrete</label>
-                <select id="GradeofConcrete" class="bg-slate-800 text-amber-50 p-2 rounded">
-                    <option value="20">M20</option> 
-                    <option value="25">M25</option> 
-                    <option value="30">M30</option> 
-                    <option value="35">M35</option> 
-                    <option value="40">M40</option> 
-                    <option value="45">M45</option> 
-                    <option value="50">M50</option> 
-                    <option value="55">M55</option> 
-                    <option value="60">M60</option> 
-                    <option value="65">M65</option> 
-                </select>
-    
-                <!-- Grade of Cement -->
-                <label for="GradeofCement" class="text-right">Grade of Cement</label>
-                <select id="GradeofCement" class="bg-slate-800 text-amber-50 p-2 rounded">
-                    <option value="OPC33">OPC33</option>
-                    <option value="OPC43">OPC43</option>
-                    <option value="OPC53">OPC53</option>
-                </select>
-    
-                <!-- SCm(%) -->
-                <label for="SCm" class="text-right">SCm(%)</label>
-                <input type="text" id="SCm" placeholder="Enter the SCm" class="p-2 bg-slate-800 rounded text-white">
-    
-                <!-- Maximum Size of Aggregate -->
-                <label for="MaximumSizeOfAggregate" class="text-right">Maximum Size of aggregate</label>
-                <select id="MaximumSizeOfAggregate" class="bg-slate-800 text-amber-50 p-2 rounded">
-                    <option value="10">10mm</option>
-                    <option value="20">20mm</option>
-                    <option value="40">40mm</option>
-                </select>
-    
-                <!-- Type of Aggregate -->
-                <label for="TypeOfAggregate" class="text-right">Type of aggregate</label>
-                <select id="TypeOfAggregate" class="bg-slate-800 text-amber-50 p-2 rounded">
-                    <option value="Angular">Angular</option>
-                    <option value="Crushed">Crushed</option>
-                    <option value="Rounded">Rounded</option>
-                </select>
-    
-                <!-- Exposure Condition -->
-                <label for="ExposureCondition" class="text-right">Exposure Condition</label>
-                <select id="ExposureCondition" class="bg-slate-800 text-amber-50 p-2 rounded">
-                    <option value="Mild">Mild</option>
-                    <option value="Moderate">Moderate</option>
-                    <option value="Severe">Severe</option>
-                </select>
-    
-                <label for="WaterCementRatio" class="text-right">Water Cement Ratio</label>
-                <input type="text" id="WaterCementRatio" placeholder="Enter the WCratio in mm" class="p-2 bg-slate-800 rounded text-white">
-    
-                <!-- Fine Aggregate Zone -->
-                <label for="FineAggregateZone" class="text-right">Fine aggregate Zone</label>
-                <select id="FineAggregateZone" class="bg-slate-800 text-amber-50 p-2 rounded">
-                    <option value="1">I</option>
-                    <option value="2">II</option>
-                    <option value="3">III</option>
-                    <option value="4">IV</option>
-                </select>
-    
-                <!-- Slump (mm) -->
-                <label for="Slump" class="text-right">Slump(mm)</label>
-                <input type="text" id="Slump" placeholder="Enter the Slump in mm" class="p-2 bg-slate-800 rounded text-white">
-    
-                
-                <!-- Water Content -->
-                <label for="WaterContent" class="text-right">Water content (based on trials)</label>
-                <input type="text" id="WaterContent" placeholder="Enter Water content" class="p-2 bg-slate-800 rounded text-white disabled:">
-            
-                <!-- part - 2 -->
-    
-                
-    
-                <label for="Volume of CA for(plumpable)" class="text-right">Volume of CA for(plumpable)</label>
-                <input type="text" id="VolumeOfCAForPlumpable" placeholder="Enter the Volume CA" class="p-2 bg-slate-800 rounded text-white">
-    
-                <label for="Admixture Dosage (%)" class="text-right">Admixture Dosage(%)</label>
-                <input type="text" id="AdmixtureDosage" placeholder="Enter the Admixture Dosage" class="p-2 bg-slate-800 rounded text-white">
-    
-                <label for="Water Reduction due to Admixture" class="text-right">Water Reduction(%) due to Admixture</label>
-                <input type="text" id="WaterReductionDueToAdmixture" placeholder="Water Reduction due to Admixture" class="p-2 bg-slate-800 rounded text-white">
-                
-                <label for="Cement" class="text-right">Specific Gravity of Cement</label>
-                <input type="text" id="SpecificGravityCement" placeholder="Enter Cement" class="p-2 bg-slate-800 rounded text-white">
-                
-                <label for="Fine Aggregate" class="text-right">Specific Gravity of Fine Aggregate</label>
-                <input type="text" id="SpecificGravityFineAggregate" placeholder="Enter the Fine Aggregate" class="p-2 bg-slate-800 rounded text-white">
-    
-                <label for="Fine Aggregate" class="text-right">Specific Gravity of Course Aggregate</label>
-                <input type="text" id="SpecificGravityCourseAggregate" placeholder="Enter the Specific Gravity of Course Aggregate" class="p-2 bg-slate-800 rounded text-white">
-                
-                <label for="Admixture" class="text-right">Specific Gravity of Admixture</label>
-                <input type="text" id="SpecificGravityAdmixture" placeholder="Enter the Admixture" class="p-2 bg-slate-800 rounded text-white">
-                
-                <label for="SpecificGravitySCm" class="text-right">Specific Gravity of  SCm</label>
-                <input type="text" id="SpecificGravitySCm" placeholder="Enter The SCm" class="p-2 bg-slate-800 rounded text-white">
-
-                <label for="Fine Aggregate" class="text-right">Fine Aggregate(water Absorbtion)</label>
-                <input type="text" id="FineAggregate" placeholder="Enter FA(water Absorbtion)" class="p-2 bg-slate-800 rounded text-white">
-                
-                <label for="Coarse Aggregate" class="text-right">Coarse Aggregate(water Absorbtion)</label>
-                <input type="text" id="CoarseAggregate" placeholder="Enter CA(water Absorbtion)" class="p-2 bg-slate-800 rounded text-white">
-                
-            </div>
-
-                   
-               
-
-            <button type="button" id="calculateBtn" class="bg-blue-600 rounded-lg mt-6 px-5 py-2 text-2xl font-semibold cursor-pointer hover:bg-blue-700 transition duration-300 ease-in-out" >Calculate</button>
-    
-            <div id="output" class="mt-6 p-2 w-full bg-gray-800 text-white rounded-lg shadow-md hidden">
-                <h2 class="text-2xl font-semibold mb-4 underline underline-offset-4 decoration-amber-50 decoration-2">Calculation Results</h2>
-                <!-- <p id="outputText">Your results will appear here...</p> -->
-    
-                <!-- OUTPUT -->
+    <div id="pdf-content">
+        <form action="">
+            <div class="bg-slate-900 m-24 p-10 w-fit rounded-xl custom-shadow flex flex-col justify-center items-center">
+        
                 <div class="grid grid-cols-2 gap-x-6 gap-y-4">
-                    <label for="Target Strength" class="text-right">Target Strength (N/mm^2)</label>
-                    <p id="TargetStrength" class="inline-block text-slate-200 px-8"></p>
-    
-                    <label for="Cement" class="text-right">Cement (kg/m^3)</label>
-                    <p id="Cement" class="inline-block text-slate-200 px-8"></p>
+                        <!-- Grade of Concrete -->
+                    <label for="GradeofConcrete" class="text-right">Grade of Concrete</label>
+                    <select id="GradeofConcrete" class="bg-slate-800 text-amber-50 p-2 rounded">
+                        <option value="20">M20</option> 
+                        <option value="25">M25</option> 
+                        <option value="30">M30</option> 
+                        <option value="35">M35</option> 
+                        <option value="40">M40</option> 
+                        <option value="45">M45</option> 
+                        <option value="50">M50</option> 
+                        <option value="55">M55</option> 
+                        <option value="60">M60</option> 
+                        <option value="65">M65</option> 
+                    </select>
+        
+                    <!-- Grade of Cement -->
+                    <label for="GradeofCement" class="text-right">Grade of Cement</label>
+                    <select id="GradeofCement" class="bg-slate-800 text-amber-50 p-2 rounded">
+                        <option value="OPC33">OPC33</option>
+                        <option value="OPC43">OPC43</option>
+                        <option value="OPC53">OPC53</option>
+                    </select>
+        
+                    <!-- SCm(%) -->
+                    <label for="SCm" class="text-right">SCm(%)</label>
+                    <input type="text" id="SCm" placeholder="Enter the SCm" class="p-2 bg-slate-800 rounded text-white">
+        
+                    <!-- Maximum Size of Aggregate -->
+                    <label for="MaximumSizeOfAggregate" class="text-right">Maximum Size of aggregate</label>
+                    <select id="MaximumSizeOfAggregate" class="bg-slate-800 text-amber-50 p-2 rounded">
+                        <option value="10">10mm</option>
+                        <option value="20">20mm</option>
+                        <option value="40">40mm</option>
+                    </select>
+        
+                    <!-- Type of Aggregate -->
+                    <label for="TypeOfAggregate" class="text-right">Type of aggregate</label>
+                    <select id="TypeOfAggregate" class="bg-slate-800 text-amber-50 p-2 rounded">
+                        <option value="Angular">Angular</option>
+                        <option value="Crushed">Crushed</option>
+                        <option value="Rounded">Rounded</option>
+                    </select>
+        
+                    <!-- Exposure Condition -->
+                    <label for="ExposureCondition" class="text-right">Exposure Condition</label>
+                    <select id="ExposureCondition" class="bg-slate-800 text-amber-50 p-2 rounded">
+                        <option value="Mild">Mild</option>
+                        <option value="Moderate">Moderate</option>
+                        <option value="Severe">Severe</option>
+                    </select>
+        
+                    <label for="WaterCementRatio" class="text-right">Water Cement Ratio</label>
+                    <input type="text" id="WaterCementRatio" placeholder="Enter the WCratio in mm" class="p-2 bg-slate-800 rounded text-white">
+        
+                    <!-- Fine Aggregate Zone -->
+                    <label for="FineAggregateZone" class="text-right">Fine aggregate Zone</label>
+                    <select id="FineAggregateZone" class="bg-slate-800 text-amber-50 p-2 rounded">
+                        <option value="1">I</option>
+                        <option value="2">II</option>
+                        <option value="3">III</option>
+                        <option value="4">IV</option>
+                    </select>
+        
+                    <!-- Slump (mm) -->
+                    <label for="Slump" class="text-right">Slump(mm)</label>
+                    <input type="text" id="Slump" placeholder="Enter the Slump in mm" class="p-2 bg-slate-800 rounded text-white">
+        
                     
-                    <label for="SCm" class="text-right">SCm (kg/m^3)</label>
-                    <p id="SCm" class="inline-block text-slate-200 px-8"></p>
-    
-                    <label for="Fine Aggregate Outputs" class="text-right">Fine Aggregate (kg/m^3)</label>
-                    <p id="FineAggregateOutputs" class="inline-block text-slate-200 px-8"></p>
-    
-                    <label for="Course Aggregate" class="text-right">Course Aggregate (kg/m^3)</label>
-                    <p id="CourseAggregateOutput" class="inline-block text-slate-200 px-8"></p>
-    
-                    <label for="Admixture" class="text-right">Admixture (kg/m^3)</label>
-                    <p id="AdmixtureMass" class="inline-block text-slate-200 px-8"></p>
-    
-                </div>
+                    <!-- Water Content -->
+                    <label for="WaterContent" class="text-right">Water content (based on trials)</label>
+                    <input type="text" id="WaterContent" placeholder="Enter Water content" class="p-2 bg-slate-800 rounded text-white disabled:">
                 
-                <!-- Proportion -->
-    
-                <div class="flex justify-center gap-4 mt-6">
-                    <div class="flex flex-col items-center">
-                        <div id="cementOrange" class="bg-amber-500 w-25 h-15 flex justify-center items-center py-1 rounded-lg">
-                             
-                        </div>
-                        <p>Cement</p>
+                    <!-- part - 2 -->
+        
+                    
+        
+                    <label for="Volume of CA for(plumpable)" class="text-right">Volume of CA for(plumpable)</label>
+                    <input type="text" id="VolumeOfCAForPlumpable" placeholder="Enter the Volume CA" class="p-2 bg-slate-800 rounded text-white">
+        
+                    <label for="Admixture Dosage (%)" class="text-right">Admixture Dosage(%)</label>
+                    <input type="text" id="AdmixtureDosage" placeholder="Enter the Admixture Dosage" class="p-2 bg-slate-800 rounded text-white">
+        
+                    <label for="Water Reduction due to Admixture" class="text-right">Water Reduction(%) due to Admixture</label>
+                    <input type="text" id="WaterReductionDueToAdmixture" placeholder="Water Reduction due to Admixture" class="p-2 bg-slate-800 rounded text-white">
+                    
+                    <label for="Cement" class="text-right">Specific Gravity of Cement</label>
+                    <input type="text" id="SpecificGravityCement" placeholder="Enter Cement" class="p-2 bg-slate-800 rounded text-white">
+                    
+                    <label for="Fine Aggregate" class="text-right">Specific Gravity of Fine Aggregate</label>
+                    <input type="text" id="SpecificGravityFineAggregate" placeholder="Enter the Fine Aggregate" class="p-2 bg-slate-800 rounded text-white">
+        
+                    <label for="Fine Aggregate" class="text-right">Specific Gravity of Course Aggregate</label>
+                    <input type="text" id="SpecificGravityCourseAggregate" placeholder="Enter the Specific Gravity of Course Aggregate" class="p-2 bg-slate-800 rounded text-white">
+                    
+                    <label for="Admixture" class="text-right">Specific Gravity of Admixture</label>
+                    <input type="text" id="SpecificGravityAdmixture" placeholder="Enter the Admixture" class="p-2 bg-slate-800 rounded text-white">
+                    
+                    <label for="SpecificGravitySCm" class="text-right">Specific Gravity of  SCm</label>
+                    <input type="text" id="SpecificGravitySCm" placeholder="Enter The SCm" class="p-2 bg-slate-800 rounded text-white">
+
+                    <label for="Fine Aggregate" class="text-right">Fine Aggregate(water Absorbtion)</label>
+                    <input type="text" id="FineAggregate" placeholder="Enter FA(water Absorbtion)" class="p-2 bg-slate-800 rounded text-white">
+                    
+                    <label for="Coarse Aggregate" class="text-right">Coarse Aggregate(water Absorbtion)</label>
+                    <input type="text" id="CoarseAggregate" placeholder="Enter CA(water Absorbtion)" class="p-2 bg-slate-800 rounded text-white">
+                    
+                </div>
+
+                <button type="button" id="calculateBtn" class="bg-blue-600 rounded-lg mt-6 px-5 py-2 text-2xl font-semibold cursor-pointer hover:bg-blue-700 transition duration-300 ease-in-out" >Calculate</button>
+                
+                <div id="output" class="mt-6 p-2 w-full bg-gray-800 text-white rounded-lg shadow-md hidden">
+                    <h2 class="text-2xl font-semibold mb-4 underline underline-offset-4 decoration-amber-50 decoration-2">Calculation Results</h2>
+                    <!-- <p id="outputText">Your results will appear here...</p> -->
+        
+                    <!-- OUTPUT -->
+                    <div class="grid grid-cols-2 gap-x-6 gap-y-4">
+                        <label for="Target Strength" class="text-right">Target Strength (N/mm^2)</label>
+                        <p id="TargetStrength" class="inline-block text-slate-200 px-8"></p>
+        
+                        <label for="Cement" class="text-right">Cement (kg/m^3)</label>
+                        <p id="Cement" class="inline-block text-slate-200 px-8"></p>
+                        
+                        <label for="SCm" class="text-right">SCm (kg/m^3)</label>
+                        <p id="SCm" class="inline-block text-slate-200 px-8"></p>
+        
+                        <label for="Fine Aggregate Outputs" class="text-right">Fine Aggregate (kg/m^3)</label>
+                        <p id="FineAggregateOutputs" class="inline-block text-slate-200 px-8"></p>
+        
+                        <label for="Course Aggregate" class="text-right">Course Aggregate (kg/m^3)</label>
+                        <p id="CourseAggregateOutput" class="inline-block text-slate-200 px-8"></p>
+        
+                        <label for="Admixture" class="text-right">Admixture (kg/m^3)</label>
+                        <p id="AdmixtureMass" class="inline-block text-slate-200 px-8"></p>
+        
                     </div>
-                    <div class="flex flex-col items-center">
-                        <div id="fineAggGreen" class="bg-green-500 w-25 h-15 flex justify-center items-center py-1 rounded-lg">
-                            
+                    
+                    <!-- Proportion -->
+        
+                    <div class="flex justify-center gap-4 mt-6">
+                        <div class="flex flex-col items-center">
+                            <div id="cementOrange" class="bg-amber-500 w-25 h-15 flex justify-center items-center py-1 rounded-lg">
+                                
+                            </div>
+                            <p>Cement</p>
                         </div>
-                        <p>Fine aggregate</p>   
-                    </div>
-                    <div class="flex flex-col items-center">
-                        <div id="courseAggBlue" class="bg-blue-500 w-25 h-15 flex justify-center items-center py-1 rounded-lg">
-                            
+                        <div class="flex flex-col items-center">
+                            <div id="fineAggGreen" class="bg-green-500 w-25 h-15 flex justify-center items-center py-1 rounded-lg">
+                                
+                            </div>
+                            <p>Fine aggregate</p>   
                         </div>
-                        <p>Course aggregate</p>
-                    </div>
-                    <div class="flex flex-col items-center">
-                        <div id="waterConRed" class="bg-red-500 w-25 h-15 flex justify-center items-center py-1 rounded-lg">
-                            <p>W/C</p>
+                        <div class="flex flex-col items-center">
+                            <div id="courseAggBlue" class="bg-blue-500 w-25 h-15 flex justify-center items-center py-1 rounded-lg">
+                                
+                            </div>
+                            <p>Course aggregate</p>
                         </div>
-                        <p>Water Content</p>
+                        <div class="flex flex-col items-center">
+                            <div id="waterConRed" class="bg-red-500 w-25 h-15 flex justify-center items-center py-1 rounded-lg">
+                                <p>W/C</p>
+                            </div>
+                            <p>Water Content</p>
+                        </div>
                     </div>
                 </div>
+
+                <button id="downloadPDF" class="download-btn">Download Results</button>
+                
+        
             </div>
+        </form>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     
-        </div>
-    </form>
+<script>
+  document.getElementById('downloadPDF').addEventListener('click', async () => {
+    const { jsPDF } = window.jspdf;
+    const doc = new jsPDF();
+
+    let y = 10;
+
+    doc.setFontSize(16);
+    doc.text("Concrete Mix Design Report", 10, y);
+    y += 10;
+
+    // 🧡 INPUT SECTION
+    doc.setFontSize(12);
+    doc.text("Inputs:", 10, y);
+    y += 8;
+
+    const inputFields = [
+      { label: "Grade of Concrete", id: "GradeofConcrete" },
+      { label: "Slump (mm)", id: "Slump" },
+      { label: "Water-Cement Ratio", id: "waterConRed" },
+      { label: "Admixture Dosage", id: "AdmixtureDosage" },
+      { label: "Maximum Size of Aggregate", id: "MaximumSizeOfAggregate" },
+      { label: "Fine Aggregate Zone", id: "FineAggregateZone" },
+      { label: "Specific Gravity of Cement", id: "SpecificGravityCement" },
+      { label: "Specific Gravity of Admixture", id: "SpecificGravityAdmixture" },
+      { label: "Specific Gravity of Fine Aggregate", id: "SpecificGravityFineAggregate" },
+      { label: "Specific Gravity of Coarse Aggregate", id: "SpecificGravityCourseAggregate" },
+    ];
+
+    inputFields.forEach(field => {
+      const value = document.getElementById(field.id)?.value;
+      if (value?.trim()) {
+        doc.text(`${field.label}: ${value}`, 10, y);
+        y += 7;
+      }
+    });
+
+    // 💚 OUTPUT SECTION
+    y += 5;
+    doc.text("Outputs:", 10, y);
+    y += 8;
+
+    const outputFields = [
+      { label: "Target Strength", id: "TargetStrength" },
+      { label: "Cement (kg)", id: "Cement" },
+      { label: "Fine Aggregate (kg)", id: "FineAggregateOutputs" },
+      { label: "Coarse Aggregate (kg)", id: "CourseAggregateOutput" },
+      { label: "Admixture (kg)", id: "AdmixtureMass" },
+    ];
+
+    outputFields.forEach(field => {
+      const value = document.getElementById(field.id)?.innerText;
+      if (value?.trim()) {
+        doc.text(`${field.label}: ${value}`, 10, y);
+        y += 7;
+      }
+    });
+
+    doc.save("Concrete_Mix_Design.pdf");
+  });
+</script>
+
     <script src="script.js"></script>
 </body>
 </html>

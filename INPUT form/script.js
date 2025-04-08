@@ -3,6 +3,7 @@ const slumpInput = document.getElementById('Slump');
 const waterContentInput = document.getElementById('WaterContent');
 
 
+
 document.addEventListener('DOMContentLoaded', () => {
   
   function toggleFields() {
