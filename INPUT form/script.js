@@ -1,4 +1,34 @@
 let button = document.getElementById("calculateBtn");
+const slumpInput = document.getElementById('Slump');
+const waterContentInput = document.getElementById('WaterContent');
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  
+  function toggleFields() {
+      if (slumpInput.value.trim() !== '') {
+          waterContentInput.disabled = true;
+          waterContentInput.classList.add('opacity-50', 'cursor-not-allowed');
+      } else {
+          waterContentInput.disabled = false;
+          waterContentInput.classList.remove('opacity-50', 'cursor-not-allowed');
+      }
+
+      if (waterContentInput.value.trim() !== '') {
+          slumpInput.disabled = true;
+          slumpInput.classList.add('opacity-50', 'cursor-not-allowed');
+      } else {
+          slumpInput.disabled = false;
+          slumpInput.classList.remove('opacity-50', 'cursor-not-allowed');
+      }
+  }
+
+  slumpInput.addEventListener('input', toggleFields);
+  waterContentInput.addEventListener('input', toggleFields);
+});
+
+
+
 
 button.addEventListener("click", function () {
   // 💋 Helper function to fetch values and parse them easily
@@ -8,7 +38,7 @@ button.addEventListener("click", function () {
   // 🎯 Input Section – Grabbing user inputs from the form
   const gradeOfConcrete = getVal("GradeofConcrete", parseInt);
   const ExposureCondition = document.getElementById("ExposureCondition").value;
-  const Slump = getVal("Slump");
+  const Slump = getVal("Slump", parseInt);
   const MaxCAggSize = getVal("MaximumSizeOfAggregate", parseInt);
   const AdmixtureDosage = getVal("AdmixtureDosage");
   const WaterReductionDueToAdmixture = getVal("WaterReductionDueToAdmixture", parseInt);
@@ -20,6 +50,12 @@ button.addEventListener("click", function () {
   const WCRatio = getVal("WaterCementRatio");
   const SGWater = 1; // Standard specific gravity for water
   const volConcrete = 1; // Standard design volume (1 m³ of concrete)
+  const waterContentInput = getVal("WaterContent", parseFloat); 
+  console.log(waterContentInput)
+  console.log(typeof(waterContentInput));
+  
+
+  
 
   // 💦 Function to determine volume ratio of fine/coarse aggregate based on IS Code
   const FAzone = (size, z) => {
@@ -82,7 +118,8 @@ button.addEventListener("click", function () {
   const targetStrength = targetMeanStrength(gradeOfConcrete);
   document.getElementById("TargetStrength").innerText = targetStrength;
 
-  const ActualwaterContent = waterContent(Slump, MaxCAggSize);
+  const ActualwaterContent = waterContentInput ||  waterContent(Slump, MaxCAggSize);
+  console.log(ActualwaterContent)
   const cement = cementContent(ActualwaterContent, WCRatio);
   const entraAir = entrappedAir(MaxCAggSize);
   const volRatio = volumeofCA_FA(WCRatio);

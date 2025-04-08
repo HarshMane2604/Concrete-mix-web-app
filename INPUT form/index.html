@@ -82,7 +82,7 @@
                 
                 <!-- Water Content -->
                 <label for="WaterContent" class="text-right">Water content (based on trials)</label>
-                <input type="text" id="WaterContent" placeholder="Enter Water content" class="p-2 bg-slate-800 rounded text-white">
+                <input type="text" id="WaterContent" placeholder="Enter Water content" class="p-2 bg-slate-800 rounded text-white disabled:">
             
                 <!-- part - 2 -->
     
@@ -111,14 +111,18 @@
                 
                 <label for="SpecificGravitySCm" class="text-right">Specific Gravity of  SCm</label>
                 <input type="text" id="SpecificGravitySCm" placeholder="Enter The SCm" class="p-2 bg-slate-800 rounded text-white">
+
+                <label for="Fine Aggregate" class="text-right">Fine Aggregate(water Absorbtion)</label>
+                <input type="text" id="FineAggregate" placeholder="Enter FA(water Absorbtion)" class="p-2 bg-slate-800 rounded text-white">
                 
+                <label for="Coarse Aggregate" class="text-right">Coarse Aggregate(water Absorbtion)</label>
+                <input type="text" id="CoarseAggregate" placeholder="Enter CA(water Absorbtion)" class="p-2 bg-slate-800 rounded text-white">
                 
-                <label for="Fine Aggregate" class="text-right">Fine Aggregate</label>
-                <input type="text" id="FineAggregate" placeholder="Enter Fine Aggregate" class="p-2 bg-slate-800 rounded text-white">
-                
-                <label for="Coarse Aggregate" class="text-right">Coarse Aggregate</label>
-                <input type="text" id="CoarseAggregate" placeholder="Enter Coarse Aggregate" class="p-2 bg-slate-800 rounded text-white">
             </div>
+
+                   
+               
+
             <button type="button" id="calculateBtn" class="bg-blue-600 rounded-lg mt-6 px-5 py-2 text-2xl font-semibold cursor-pointer hover:bg-blue-700 transition duration-300 ease-in-out" >Calculate</button>
     
             <div id="output" class="mt-6 p-2 w-full bg-gray-800 text-white rounded-lg shadow-md hidden">
