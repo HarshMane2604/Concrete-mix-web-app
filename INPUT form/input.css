@@ -1,0 +1,9 @@
+@import "tailwindcss";
+.custom-shadow {
+    box-shadow: 0 0 22px rgba(255, 255, 255, 0.7); /* Even spread in all directions */
+}
+
+/* *{
+    background-color: black;
+    color: white;
+} */

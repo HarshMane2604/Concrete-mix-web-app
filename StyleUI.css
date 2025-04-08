@@ -54,12 +54,12 @@ nav{
     color: rgba(253 205 45);;
 }
 .primary-btn{
-    background-color: rgba(253 205 45);
+    background-color: rgb(253, 205, 45);
     font-size: 1rem;
     font-weight: 600;
     /* font-weight: 700; */
     line-height: 2rem;
-    color: white;
+    color: #000000;
     padding: 0.5rem 1rem;
     border-radius: .5rem;
     cursor: pointer;
@@ -451,7 +451,7 @@ footer {
 
 
 
-  /* For WebKit browsers (Chrome, Safari, Edge) */
+  /* For WebKit browsers (Chrome, Safari, Edge) */ 
 ::-webkit-scrollbar {
     width: 15px; /* Width of the scrollbar */
   }
